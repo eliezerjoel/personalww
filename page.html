@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page</title>
-    <link rel="stylesheet" href="style/jojostyles.css">
+<style>
+    .dropdn-content{
+        display: none;
+        position: absolute;
+        background-color: aliceblue;
+        box-shadow: 0px 8px 16px 0px coral;
+        padding: auto;
+        z-index: 1;
 
+    }
+
+    .dropdn{
+     position: relative;
+     display: inline-block;
+    }
+    .dropdn:hover .dropdn-content{
+        display: block;
+    }
+
+</style>
 </head>
 <body>
-    <div class="dropdown">
+    <div class="dropdn">
         <button>Navigation</button>
-        <div class="dropdown-content">
+        <div class="dropdn-content">
             <p><a href="mystory.html">My story</a></p>
             <p><a href="index.html">Home</a></p>
             <p><a href="personality.html">Personality</a></p>
